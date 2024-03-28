@@ -21,7 +21,11 @@ Users should be able to:
 - See hover states for interactive elements
 
 ### Screenshot
-![](./MyDesign-desktop.png)
+
+![Snímek obrazovky 2024-03-28 085648](https://github.com/evsta24/NFT-preview-card-component/assets/159118157/2c29d2a1-05a5-4c36-8c0f-bfa048835194)
+
+Active-states
+![image](https://github.com/evsta24/NFT-preview-card-component/assets/159118157/8c4241c8-a1aa-4088-a0ce-490b622eb98f)
 
 ## My process
 
