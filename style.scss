@@ -1,0 +1,136 @@
+:root {
+    --colorCyan: hsl(178, 100%, 50%);
+    --colorCyanTransparent: hsla(178, 100%, 50%, 0.5);
+    --colorSoftBlue: hsl(215, 51%, 70%);
+    --colorWhite: hsl(0, 0%, 100%);
+    --padding15: 15px;
+    --padding20: 20px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    color: var(--colorSoftBlue);
+}
+
+main {
+    background-color: hsl(217, 54%, 11%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Card {
+    background-color:  hsl(216, 50%, 16%);
+    text-align: center;
+    padding: 25px;
+    border-radius: 15px;
+
+    @media screen and (min-width: 375px) {width: 364px;} 
+
+    &-image {
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        aspect-ratio: 1 / 1;
+
+        img {
+            width: 100%;
+            height: 100%;
+            transition: 0.3s;
+            object-fit: cover;
+        }
+        
+        &:hover .Card-overlay {
+            display: flex;
+        }
+    }
+
+    &-overlay {
+        color: var(--colorWhite);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        inset: 0;
+        background-color: var(--colorCyanTransparent);
+        z-index: 5;
+    }
+    
+    &-title {
+        text-align: left;
+        padding-top: var(--padding15);
+
+        a {
+            color: var(--colorWhite);
+            font-weight: 600;
+            font-size: 22px;
+            text-decoration: none;
+            transition: 0.3s;
+
+            &:hover {
+                color: var(--colorCyan);
+            }
+        }
+    }
+    
+    &-text {
+        text-align: left;
+        padding-top: var(--padding15);
+    }
+
+    &-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--padding20) 0px;
+        border-bottom: 1px solid hsl(215, 32%, 27%);
+        font-size: 16px;
+    }
+
+    &-currency {
+        color: var(--colorCyan);
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    &-duration {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    &-creator {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding-top: var(--padding15);
+
+        img {
+            width: 35px;
+            height: 35px;
+            border-radius: 100%;
+            overflow: hidden;
+            border: 1px solid var(--colorWhite);
+        }
+
+        &Text a {
+            color: var(--colorWhite);
+            text-decoration: none;
+            transition: 0.3s;
+
+            &:hover {
+                color: var(--colorCyan);
+            }
+        }
+    }
+}
