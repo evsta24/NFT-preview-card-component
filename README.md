@@ -32,7 +32,7 @@ Active-states
 ### Built with
 
 - Semantic HTML5 markup
-- SUIT CSS method
+- SCSS method
 - Flexbox
 - Mobile-first workflow
 
